@@ -28,12 +28,12 @@ services:
           context: ./nginx_docker_prod
 
         volumes:
-          - public-data:/myapp/public
-          - tmp-data:/myapp/tmp
+            - public-data:/myapp/public
+            - tmp-data:/myapp/tmp
         ports:
-          - 80:80
+            - 80:80
         depends_on:
-          - web
+            - web
 
 volumes:
   gem_data:
