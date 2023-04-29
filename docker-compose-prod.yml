@@ -37,3 +37,5 @@ services:
 
 volumes:
   gem_data:
+  public-data:
+  tmp-data:
