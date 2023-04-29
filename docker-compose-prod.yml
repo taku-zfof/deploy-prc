@@ -28,8 +28,8 @@ services:
           context: ./nginx_docker_prod
 
         volumes:
-          - public-data:/app_name/public
-          - tmp-data:/app_name/tmp
+          - public-data:/deploy-prc/public
+          - tmp-data:/deploy-prc/tmp
         ports:
           - 80:80
         depends_on:
