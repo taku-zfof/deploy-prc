@@ -28,8 +28,7 @@ services:
           context: ./nginx_docker_prod
 
         volumes:
-          - public-data:/public
-          - tmp-data:/tmp
+          - ./public:/usr/share/nginx/html
         ports:
           - 80:80
         depends_on:
