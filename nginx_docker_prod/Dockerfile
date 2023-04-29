@@ -1,7 +1,7 @@
-FROM nginx:1.15.8
+FROM nginx:1.22.1
 
 RUN rm -f /etc/nginx/conf.d/*
 
-ADD nginx.conf /etc/nginx/conf.d/deploy-prc.conf
+ADD nginx.conf /etc/nginx/conf.d/myapp.conf
 
 CMD /usr/sbin/nginx -g 'daemon off;' -c /etc/nginx/nginx.conf
