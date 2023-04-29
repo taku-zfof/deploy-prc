@@ -21,19 +21,19 @@ services:
             - 8080:8080
         tty: true
         stdin_open: true
-    
-    
+
+
     nginx:
         build:
           context: ./nginx_docker_prod
-       
+
         volumes:
           - public-data:/app_name/public
           - tmp-data:/app_name/tmp
         ports:
           - 80:80
         depends_on:
-          - we
+          - web
 
 volumes:
   gem_data:
